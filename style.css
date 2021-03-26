@@ -1,0 +1,136 @@
+body{
+  /*Stile utile al footer*/
+  display:flex;
+  flex-direction:column;
+
+  background-color: #CACFD2;
+}
+
+html, body{
+  margin: 0;
+  font-family: 'Source Sans Pro';
+}
+
+/*----------CSS relativo al Navbar----------*/
+
+#navbar {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  top: 0;
+}
+
+.navbar-content {
+  float: left;
+}
+
+.navbar-content a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-content a:hover, .dropdown:hover .dropbtn {
+  background-color: tomato;
+}
+
+div.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*-------Fine CSS relativo al Navbar--------*/
+
+#titolo{
+  font-size: 2em;
+  text-align: center;
+  color: #A1FFA0;
+  background-color: #2C3E50;
+  padding: 15px 0;
+}
+
+.contenuti{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 10px auto;
+  width: 50%;
+  border: solid black 2px;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.card{
+  margin: 5px 0;
+  border: solid black 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.pantone{
+  width: 100%;
+  border-radius: 5px;
+}
+
+#footer{
+  background-color: mediumseagreen;
+  margin-top:auto;
+    padding: 10px 10%;
+}
+
+.sottotitolo{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.par{
+  margin: 10px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.descr{
+  font-family: monospace;
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#s{
+  float: right;
+  background-color: #A1FFA0;
+}
